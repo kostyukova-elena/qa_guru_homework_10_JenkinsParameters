@@ -9,9 +9,12 @@ public class SystemPropertiesTests {
     @Test
     @Tag("property")
     void SystemPropertiesTests(){
-//        System.setProperty("browser", "chrome");
         String browser = System.getProperty("browser", "chrome");
+        String browserVersion = System.getProperty("browserVersion", "128.0");
+        String browserSize = System.getProperty("browserSize", "1920x1080");
 
         System.out.println(browser);
+        System.out.println(browserVersion);
+        System.out.println(browserSize);
     }
 }

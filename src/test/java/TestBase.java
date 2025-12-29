@@ -12,10 +12,9 @@ import java.util.Map;
 public class TestBase {
     @BeforeAll
     static void setupSelenideEnv() {
-        Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 5000;
+        Configuration.timeout = 4000;
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.of(
                 "enableVNC", true,
